@@ -4,6 +4,8 @@
 
 package elseif;
 
+import java.awt.Color;
+
 import javax.swing.JOptionPane;
 
 public class BirthdayReminder {
@@ -16,7 +18,15 @@ public class BirthdayReminder {
 		String myBirthday = "April 16th";
 
 		// 2. Find out which birthday the user wants and and store their response in a variable
-	
+		 String caren =  JOptionPane.showInputDialog(null, "Which birthday do you want to learn?");
+		 if(caren.equalsIgnoreCase("Mom")) {
+		JOptionPane.showMessageDialog(null, momsBirthday);
+		 }
+		else if(caren.equalsIgnoreCase("Dad")){
+			JOptionPane.showMessageDialog(null, dadsBirthday);}
+			else if(caren.equalsIgnoreCase("My birthday")) {
+				JOptionPane.showMessageDialog(null, myBirthday);}
+			else JOptionPane.showMessageDialog(null, "Sorry, I dont remember that person's birthday!");
 		// 3. Print out what the user typed
 		
 		// 4. if user asked for "mom"
